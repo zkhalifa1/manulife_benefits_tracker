@@ -1,4 +1,4 @@
-import React, { useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -139,7 +139,7 @@ export default function ManulifeBenefitsApp() {
                             />
                         </div>
                         <Button
-                            className="w-full bg-[#f8f5e9] text-slate-900 border border-[#f8f5e9] hover:bg-[#f8f5e9]/90 hover:text-slate-900"
+                            className="w-full bg-[#f8f5e9] text-[#f8f5e9] font-semibold border border-[#f8f5e9] hover:bg-[#f8f5e9] hover:text-[#f8f5e9]"
                             onClick={() => {
                                 if (username.trim() && password.trim()) setLoggedIn(true);
                             }}
